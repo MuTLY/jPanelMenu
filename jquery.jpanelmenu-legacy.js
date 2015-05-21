@@ -434,11 +434,11 @@
 			},
 
 			initiateClickListeners: function() {
-				$(document).on('click',jP.options.trigger,function(){ jP.triggerMenu(jP.options.animated); return false; });
+				$(document).on('click touchend',jP.options.trigger,function(){ jP.triggerMenu(jP.options.animated); return false; });
 			},
 
 			destroyClickListeners: function() {
-				$(document).off('click',jP.options.trigger,null);
+				$(document).off('click touchend',jP.options.trigger,null);
 			},
 
 			initiateContentClickListeners: function() {
